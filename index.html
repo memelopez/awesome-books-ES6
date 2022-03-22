@@ -8,5 +8,63 @@
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <a href="#">
+          <h3>Awesome Books`</h3>
+        </a>
+        <div class="rightNAvLinks">
+          <a href="#" class="RNLink"><span>List</span></a>
+          <span class="navLinkSeparator">|</span>
+          <a href="#" class="RNLink"><span>Add new</span></a>
+          <span class="navLinkSeparator">|</span>
+          <a href="#" class="RNLink"><span>Contact</span></a>
+        </div>
+      </nav>
+      <section class="luxonDateTime">
+        <span>here goes the date & time</span>
+      </section>
+    </header>
+    <div class="mainContent">
+      <section class="list">
+        <ul id="bookList"></ul>
+      </section>
+      <section class="addNew">
+        <form action="submit" class="newBook">
+          <h4 class="newB-title">Add a new book</h4>
+          <input type="text" id="title" />
+          <input type="text" id="author" />
+          <div class="formBtns">
+            <button type="reset" class="btnNewB">Reset</button>
+            <button type="submit" class="btnNewB">Add</button>
+          </div>
+        </form>
+      </section>
+      <section class="contact">
+        <div>
+          <h4 class="contactTitle">Contact Information</h4>
+          <p class="contactP">
+            Do you have any questions or you want to say "Hello"? You can reah
+            out to us!
+          </p>
+          <ul class="contactUL">
+            <li>
+              <p>Our email: mail@mail.com</p>
+            </li>
+            <li>
+              <p>Our phone number: 0043586534422</p>
+            </li>
+            <li>
+              <p>Our address: Streetname 22, 84503 City, Country</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- .mainContent -->
+    <footer>
+      <span>Copyright....</span>
+    </footer>
+  </body>
 </html>
