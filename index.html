@@ -6,35 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Books</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
   </head>
   <body>
     <header>
       <nav>
         <a href="#">
-          <h3>Awesome Books`</h3>
+          <h3 class="bgT">Awesome Books</h3>
         </a>
-        <div class="rightNAvLinks">
-          <a href="#" class="RNLink"><span>List</span></a>
-          <span class="navLinkSeparator">|</span>
-          <a href="#" class="RNLink"><span>Add new</span></a>
-          <span class="navLinkSeparator">|</span>
-          <a href="#" class="RNLink"><span>Contact</span></a>
+        <div class="rightNavLinks">
+          <a href="#" class="RNLink"><span class="mdT">List</span></a>
+          <span class="navLinkSeparator mdT">|</span>
+          <a href="#" class="RNLink"><span class="mdT">Add new</span></a>
+          <span class="navLinkSeparator mdT">|</span>
+          <a href="#" class="RNLink"><span class="mdT">Contact</span></a>
         </div>
       </nav>
+    </header>
+    <div class="mainContent">
       <section class="luxonDateTime">
         <span>here goes the date & time</span>
       </section>
-    </header>
-    <div class="mainContent">
       <section class="list">
         <ul id="bookList"></ul>
       </section>
       <section class="addNew">
-        <form action="submit" class="newBook">
+        <form class="newBook" id="form">
           <h4 class="newB-title">Add a new book</h4>
-          <input type="text" id="title" />
-          <input type="text" id="author" />
+          <input type="text" id="title" placeholder="Title" />
+          <input type="text" id="author" placeholder="Author" />
           <div class="formBtns">
             <button type="reset" class="btnNewB">Reset</button>
             <button type="submit" class="btnNewB">Add</button>
@@ -64,7 +64,9 @@
     </div>
     <!-- .mainContent -->
     <footer>
-      <span>Copyright....</span>
+      <div class="insideFooter">
+        <span>Copyright....</span>
+      </div>
     </footer>
   </body>
 </html>
