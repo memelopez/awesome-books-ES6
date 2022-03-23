@@ -29,6 +29,7 @@ document.querySelector('#form').addEventListener('submit', (e) => {
   }
   document.querySelector('#title').value = '';
   document.querySelector('#author').value = '';
+  UI.displayList();
 });
 
 // on remove btn click
