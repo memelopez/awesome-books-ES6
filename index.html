@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">
+          <h3 class="bgT">Awesome Books</h3>
+        </a>
+        <div class="rightNavLinks">
+          <a href="#" class="RNLink" id="listA">
+            <span class="mdT">List</span>
+          </a>
+          <span class="navLinkSeparator mdT">|</span>
+          <a href="#" class="RNLink" id="formA">
+            <span class="mdT">Add new</span>
+          </a>
+          <span class="navLinkSeparator mdT">|</span>
+          <a href="#" class="RNLink" id="contactA">
+            <span class="mdT">Contact</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="mainContent">
+      <section class="luxonDateTime">
+        <span id="luxonDate">here goes the date & time</span>
+      </section>
+      <section class="list">
+        <h2 class="listTitle txtCenter">All awesome books</h2>
+        <ul id="bookList"></ul>
+      </section>
+      <section class="addNew hide">
+        <form class="newBook" id="form">
+          <h2 class="newB-title">Add new book</h2>
+          <input type="text" id="title" placeholder="Title" />
+          <input type="text" id="author" placeholder="Author" />
+          <div class="formBtns">
+            <button type="reset" class="btnNewB">Reset</button>
+            <button type="submit" class="btnNewB">Add</button>
+          </div>
+        </form>
+      </section>
+      <section class="contact hide">
+        <div>
+          <h2 class="contactTitle txtCenter">Contact information</h2>
+          <p class="contactP">
+            Do you have any questions or you want to say "Hello"? You can reah
+            out to us!
+          </p>
+          <ul class="contactUL">
+            <li>
+              <p>Our email: mail@mail.com</p>
+            </li>
+            <li>
+              <p>Our phone number: 0043586534422</p>
+            </li>
+            <li>
+              <p>Our address: Streetname 22, 84503 City, Country</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- .mainContent -->
+    <footer>
+      <div class="insideFooter">
+        <span>Copyright....</span>
+      </div>
+    </footer>
+  </body>
+</html>

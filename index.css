@@ -1,0 +1,185 @@
+/* /index.css - for ALL of the styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+  min-height: calc(100vh - 10px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Resusable classes */
+
+.smT {
+  font-size: 0.5em;
+}
+
+.mdT {
+  font-size: 1.15em;
+}
+
+.bgT {
+  font-size: 1.35em;
+}
+
+.hide {
+  display: none;
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+/* header */
+
+header {
+  margin: 0.25em 0.35em;
+  padding: 0 4em;
+  border: 2px solid black;
+  height: 68px;
+  z-index: 1;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0.8%;
+  right: 10%;
+  left: 10%;
+  z-index: 2;
+}
+
+.rightNavLinks > span {
+  margin: 0 1em;
+}
+
+/* main content */
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.luxonDateTime {
+  align-self: flex-end;
+  margin-right: 3em;
+}
+
+/* list */
+
+.list {
+  width: 70%;
+  margin: auto;
+}
+
+.list ul {
+  border: 2px solid black;
+  padding: 0.35em;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.15em 0.55em;
+}
+
+ul#bookList li:nth-child(odd) {
+  background-color: #c9c7c7;
+}
+
+.rmv {
+  background-color: white;
+  padding: 0.35em;
+  border: 1.5px solid black;
+}
+
+/* add new book FORM */
+
+.addNew {
+  width: 70%;
+  margin: auto;
+}
+
+form.newBook {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form.newBook input {
+  width: 100%;
+  margin: 0.75em 0;
+  border: 1.5px solid black;
+  padding: 0.35em;
+}
+
+.formBtns {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.formBtns button {
+  color: black;
+  background-color: #c9c7c7;
+  border: 1.35px solid black;
+  padding: 0.35em;
+  margin: 0.35em;
+}
+
+/* contact */
+
+section.contact {
+  width: 80%;
+  margin: auto;
+}
+
+section.contact div {
+  width: 70%;
+  margin: auto;
+}
+
+section.contact ul {
+  list-style: circle;
+  margin-left: 3em;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+}
+
+.insideFooter {
+  height: 50px;
+  margin: 0.25em 0.35em;
+  border: 1.5px solid black;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+}
