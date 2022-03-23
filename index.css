@@ -35,6 +35,14 @@ a {
   font-size: 1.35em;
 }
 
+.hide {
+  display: none;
+}
+
+.txtCenter {
+  text-align: center;
+}
+
 /* header */
 
 header {
@@ -95,13 +103,66 @@ nav {
 }
 
 ul#bookList li:nth-child(odd) {
-  background-color: rgb(201, 199, 199);
+  background-color: #c9c7c7;
 }
 
 .rmv {
   background-color: white;
   padding: 0.35em;
   border: 1.5px solid black;
+}
+
+/* add new book FORM */
+
+.addNew {
+  width: 70%;
+  margin: auto;
+}
+
+form.newBook {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form.newBook input {
+  width: 100%;
+  margin: 0.75em 0;
+  border: 1.5px solid black;
+  padding: 0.35em;
+}
+
+.formBtns {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.formBtns button {
+  color: black;
+  background-color: #c9c7c7;
+  border: 1.35px solid black;
+  padding: 0.35em;
+  margin: 0.35em;
+}
+
+/* contact */
+
+section.contact {
+  width: 80%;
+  margin: auto;
+}
+
+section.contact div {
+  width: 70%;
+  margin: auto;
+}
+
+section.contact ul {
+  list-style: circle;
+  margin-left: 3em;
 }
 
 /* footer */
