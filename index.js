@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', UI.displayBooks());
 
 // on form submit
 document.querySelector('#form').addEventListener('submit', (e) => {
-  console.log('entra en el eventlistener de submit');
   e.preventDefault();
 
   // gets values from inputs
@@ -20,7 +19,7 @@ document.querySelector('#form').addEventListener('submit', (e) => {
 
   // validate empty strings
   if (titleI === '' || authorI === '') {
-    console.log('title and author must not be empty!');
+    // console.log('title and author must not be empty!');
   } else {
     const books = Store.getBooks();
     const book = new Book(titleI, authorI);
@@ -51,4 +50,25 @@ document.querySelector('#bookList').addEventListener('click', (e) => {
     Store.setBooks(books);
     item2BeRemoved.remove();
   }
+});
+
+// on form nav link
+document.querySelector('#listA').addEventListener('click', (e) => {
+  e.preventDefault();
+
+  UI.displayList();
+});
+
+// on form nav link
+document.querySelector('#formA').addEventListener('click', (e) => {
+  e.preventDefault();
+
+  UI.displayForm();
+});
+
+// on contact nav link
+document.querySelector('#contactA').addEventListener('click', (e) => {
+  e.preventDefault();
+
+  UI.displayContact();
 });
